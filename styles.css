@@ -1,2 +1,31 @@
+/* Ensure the box model uses border-box */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styling the holder with flexbox */
+.holder {
+    display: flex;
+    justify-content: space-between; /* Evenly space the items */
+    flex-wrap: wrap; /* Make items go to the next row when space runs out */
+    gap: 10px; /* Add some space between the items */
+    padding: 10px;
+}
+
+/* Styling individual items */
+.item {
+    background-color: #87CEEB;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 30%; /* Each item takes up a flexible width, minimum 30% */
+    border-radius: 5px;
+    margin: 5px;
+}
 
 /* Your CSS Code here. */
